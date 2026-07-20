@@ -1,13 +1,13 @@
-package com.agenda.contactos;
+package com.agenda.contacts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ContactosApplication {
+public class ContactsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ContactosApplication.class, args);
+		SpringApplication.run(ContactsApplication.class, args);
 	}
 
 }
