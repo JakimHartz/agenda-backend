@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.agenda</groupId>
-	<artifactId>contactos</artifactId>
+	<artifactId>contacts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

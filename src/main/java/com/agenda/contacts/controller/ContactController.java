@@ -16,17 +16,16 @@ import java.util.Optional;
 @CrossOrigin(origins = "http://localhost:4200")
 public class ContactController {
 
-    @Autowired
-    private ContactRepository contactRepository;
+//    @Autowired
+//    private ContactRepository contactRepository;
 
-    // Preferible en lugar de @Autowired en el atributo:
-//    private final ContactRepository contactRepository;
-//
-//    public ContactController(ContactRepository contactRepository) {
-//        this.contactRepository = contactRepository;
-//    }
+    private final ContactRepository contactRepository;
 
-    // Obtener todos los contactos
+    public ContactController(ContactRepository contactRepository) {
+        this.contactRepository = contactRepository;
+    }
+
+    // Obtener todos los contacts
     @GetMapping
     public List<Contact> getAll(@RequestParam(required = false) String name) {
         if (name != null && !name.isEmpty()) {
